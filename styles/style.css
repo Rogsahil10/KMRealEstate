@@ -4,6 +4,7 @@
   --color-accent: #e92113;
   --color-heading: #1b0760;
   --color-body: #767186;
+  --color-body-dark: #41385e;
   --color-border: #588b8f;
   --border-radius: 50px;
 }
@@ -333,4 +334,41 @@ p {
 }
 .media__image {
   margin-top: 1rem;
+}
+/*--quotes---*/
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-body-dark);
+}
+.quote__text::before {
+  content: open-quote;
+}
+.quote__text::after {
+  content: close-quote;
+}
+.quote__line {
+  position: relative;
+  bottom: 7px;
+}
+.quote__author {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.author--desig {
+  color: var(--color-body);
+  margin-top: 0;
+  font-style: normal;
+}
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 2rem;
+  }
+  .author--desig {
+    font-size: 1.8rem;
+  }
 }
