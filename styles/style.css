@@ -5,7 +5,11 @@
   --color-heading: #1b0760;
   --color-body: #767186;
 }
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /*--------------------Topography------------------------------------------------------------------- */
 
 html {
@@ -131,4 +135,59 @@ p {
   .list--tick .list__item {
     padding-left: 0.2rem;
   }
+}
+/*---------------buttons-----------------*/
+
+.btn {
+  border-radius: 50px;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin: 2px;
+  outline: 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+.btn--primary {
+  background: var(--color-accent);
+
+  color: white;
+}
+.btn--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.btn--purchase {
+  color: #767186;
+  background: white;
+  border: 2px solid #767186;
+}
+
+/*--------foucs and hover--------*/
+
+.btn--primary:focus,
+.btn--primary:hover {
+  background: white;
+  color: var(--color-accent);
+}
+
+.btn--secondary:focus,
+.btn--secondary:hover {
+  background: white;
+  color: #4d5557;
+}
+
+.btn--purchase:focus,
+.btn--purchase:hover {
+  background: #767186;
+  color: white;
 }
