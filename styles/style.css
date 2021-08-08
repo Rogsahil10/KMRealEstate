@@ -224,3 +224,22 @@ p {
     font-size: 1.5rem;
   }
 }
+
+/*-----icons------*/
+
+.icon-container {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background: var(--color-accent);
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.icon--primary {
+  fill: white;
+}
