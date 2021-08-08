@@ -89,7 +89,7 @@ p {
 /*-----------------badges---------*/
 .badge {
   border-radius: var(--border-radius);
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   padding: 0.5rem 3rem;
   white-space: nowrap;
@@ -104,14 +104,14 @@ p {
   color: white;
 }
 .badge--small {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .badge--small {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 /*----------lists--------------*/
@@ -169,9 +169,9 @@ p {
   color: white;
 }
 .btn--purchase {
-  color: var(--color-body);
+  color: var(--color-primary);
   background: white;
-  border: 2px solid --color-border;
+  border: 2px solid var(--color-border);
 }
 
 /*--------foucs and hover--------*/
@@ -190,7 +190,8 @@ p {
 
 .btn--purchase:focus,
 .btn--purchase:hover {
-  background: #767186;
+  background: var(--color-primary);
+
   color: white;
 }
 /*--------------inputs----------*/
@@ -263,4 +264,29 @@ p {
 .card--secondary .card__header {
   color: white;
   background: var(--color-secondary);
+}
+
+/*---plans---*/
+
+.plan__name {
+  color: white;
+  margin: 0;
+}
+.plan__price {
+  font-size: 8rem;
+}
+.plan__period {
+  opacity: 80%;
+  margin-right: 2px;
+}
+.plan__description {
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+.plan .list--tick {
+  margin: 0;
 }
