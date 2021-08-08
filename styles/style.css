@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #0510f5;
+  --color-primary: #6899d1;
   --color-secondary: #4d5557;
   --color-accent: #e92113;
   --color-heading: #1b0760;
@@ -242,4 +242,25 @@ p {
 }
 .icon--primary {
   fill: white;
+}
+/*------cards------*/
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--color-border);
+  height: auto;
+  border-radius: 10px;
+}
+
+.card__header,
+.card__body {
+  padding: 3rem;
+}
+.card--primary .card__header {
+  color: white;
+  background: var(--color-primary);
+}
+.card--secondary .card__header {
+  color: white;
+  background: var(--color-secondary);
 }
