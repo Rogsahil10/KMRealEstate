@@ -459,3 +459,34 @@ p {
     margin: 2rem;
   }
 }
+/*---collapse---*/
+
+.dropdown__header {
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown__heading {
+  font-size: 3rem;
+  margin: 0;
+}
+.dropdown__icon {
+  transform: rotate(-90deg);
+}
+.dropdown__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.dropdown--expanded .dropdown__icon {
+  transform: rotate(0);
+  transition: all 0.3s;
+}
+
+.dropdown--expanded .dropdown__body {
+  max-height: 100vh;
+  opacity: 1;
+}
+.dropdown__header:hover {
+  cursor: pointer;
+}
