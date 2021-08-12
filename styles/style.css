@@ -275,6 +275,9 @@ p {
 .icon--nav {
   fill: var(--color-accent);
 }
+.icon--secondary {
+  fill: black;
+}
 
 /*------cards------*/
 
@@ -616,6 +619,7 @@ p {
   color: white;
 }
 .block__header {
+  margin-bottom: 12rem;
   text-align: center;
 }
 .block--skewed--right {
@@ -680,6 +684,7 @@ p {
 }
 
 /*---service block---*/
+
 .block-service .grid {
   gap: 3rem;
 }
@@ -687,4 +692,21 @@ p {
 .block-service .card {
   margin: 0 auto;
   max-width: 500px;
+}
+
+/*---advertise block-----*/
+.block-advertise .advertise-feature {
+  gap: 4rem;
+  margin: 12rem 0;
+}
+
+.block-advertise img {
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .block-advertise .media {
+    flex-direction: column;
+  }
 }
