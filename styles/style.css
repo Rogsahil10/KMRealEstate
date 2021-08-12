@@ -162,10 +162,19 @@ p {
   white-space: nowrap;
   cursor: pointer;
 }
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
 
 .btn--block {
   width: 100%;
   display: inline-block;
+}
+.btn--search {
+  background: var(--color-banner);
+  color: white;
 }
 .btn--primary {
   background: var(--color-accent);
@@ -187,6 +196,10 @@ p {
 }
 
 /*--------foucs and hover--------*/
+
+.btn--search:hover {
+  background: var(--color-secondary);
+}
 
 .btn--primary:focus,
 .btn--primary:hover {
@@ -255,6 +268,9 @@ p {
 }
 .icon--primary {
   fill: white;
+}
+.icon--secondary {
+  fill: var(--color-secondary);
 }
 .icon--nav {
   fill: var(--color-accent);
@@ -601,5 +617,28 @@ p {
   .hero__content {
     align-self: center;
     text-align: left;
+  }
+}
+/*---search section---*/
+.search .input-group {
+  box-shadow: 0 0 20px 3px var(--color-banner);
+  max-width: 700px;
+  border: 0;
+  margin: 2rem auto;
+}
+.search--locations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  max-width: 770px;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .search--locations {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 }
