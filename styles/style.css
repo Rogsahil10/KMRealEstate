@@ -7,6 +7,7 @@
   --color-body-dark: #41385e;
   --color-border: #588b8f;
   --border-radius: 50px;
+  --color-banner: #2979ff;
 }
 *,
 *::after,
@@ -32,6 +33,7 @@ h1,
 h2,
 h3 {
   color: var(--color-heading);
+  line-height: 1.2;
 }
 
 h1 {
@@ -556,7 +558,7 @@ p {
   padding: var(--padding-vertical) 2rem;
 }
 .block--dark {
-  background: black;
+  background: var(--color-banner);
 }
 .block--dark .block__heading {
   color: white;
@@ -576,4 +578,28 @@ p {
 .container {
   margin: 0 auto;
   max-width: 1140px;
+}
+/*--hero--*/
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__tagline {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    align-self: center;
+    text-align: left;
+  }
 }
