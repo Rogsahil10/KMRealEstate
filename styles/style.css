@@ -117,10 +117,12 @@ p {
 }
 /*----------lists--------------*/
 .list {
+  text-decoration: none;
   list-style: none;
   padding-left: 0;
   color: var(--color-heading);
 }
+
 .list--inline .list__item {
   display: inline-block;
   margin-right: 2rem;
@@ -132,6 +134,9 @@ p {
 .list--tick .list__item {
   padding-left: 1.2rem;
   margin-bottom: 1.5rem;
+}
+.list a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -248,6 +253,9 @@ p {
 }
 .icon--primary {
   fill: white;
+}
+.icon--nav {
+  fill: var(--color-accent);
 }
 
 /*------cards------*/
@@ -489,4 +497,83 @@ p {
 }
 .dropdown__header:hover {
   cursor: pointer;
+}
+
+/*--navigatin bar---*/
+.nav {
+  display: flex;
+  background: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.3rem 2rem;
+}
+.nav__list {
+  width: 100%;
+  margin: 0;
+  padding: 0 0.2rem;
+}
+
+.nav__item {
+  padding: 0 2rem;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+.nav__item > a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-accent);
+}
+
+.dropdown--expanded .nav__menuicon {
+  fill: var(--color-accent);
+  box-shadow: 0 0 10px 3px var(--color-accent);
+  outline: 0;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .nav__menuicon {
+    display: none;
+  }
+  .nav__list {
+    max-height: 100%;
+    opacity: 1;
+    font-size: 1.7rem;
+    width: auto;
+    display: flex;
+    border-bottom: 1px solid var(--color-accent);
+  }
+  .nav__item {
+    border: none;
+  }
+}
+/*----blocks-----*/
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+.block--dark {
+  background: black;
+}
+.block--dark .block__heading {
+  color: white;
+}
+.block__header {
+  text-align: center;
+}
+.block--skewed--right {
+  padding: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--skewed--left {
+  padding: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
 }
