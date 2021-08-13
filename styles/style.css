@@ -710,3 +710,8 @@ p {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 769px) {
+  .advertise-feature:nth-of-type(even) .media {
+    order: 2;
+  }
+}
