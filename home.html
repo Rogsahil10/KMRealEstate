@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="A Fair Offer From Our Family To Yours
+
+    We’re Highest Offer, a family-owned real estate investment and brokerage company based out of Maharashtra, IN. Our family has been buying and selling homes in India state for over 30 years. As second-generation home investors, we’ve helped encumbered homeowners out of every situation possible. We can do the same for you. ">
+    
+     <meta property="og:title" content="KM Real Estate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/16c8d85250.js"
@@ -22,9 +27,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/normalize css.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/Home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Document</title>
+    <title>KM Real Estate</title>
   </head>
   <body>
     <header>
@@ -34,10 +40,11 @@
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list dropdown__body">
-          <li class="nav__item"><a href="#">Hosting</a></li>
-          <li class="nav__item"><a href="#">hosting</a></li>
-          <li class="nav__item"><a href="#">hosting</a></li>
-          <li class="nav__item"><a href="#">hosting</a></li>
+          <li class="nav__item"><a href="#">Home Valuation</a></li>
+          <li class="nav__item"><a href="#">Sell</a></li>
+          <li class="nav__item"><a href="#">Buy</a></li>
+          <li class="nav__item"><a href="#">Team</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -45,7 +52,7 @@
     <section class="block block--dark block--skewed--left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">SELL YOUR HOME FAST FOR CASH TODAY</h1>
+          <h1 class="block__heading" data-aos="zoom-out">SELL YOUR HOME FAST FOR CASH TODAY</h1>
           <p class="hero__tagline">
             We’re a company that can buy your house in ANY condition, regardless
             of what you OWE or if you’re in foreclosure.
@@ -64,6 +71,34 @@
       </div>
     </section>
     <!--------------------------Search--------------------------------------- -->
+    <section class="block container search">
+      <header class="block__header" data-aos="fade-up">
+        <h2>Search by location</h2>
+        <p>
+          No fixing anything, no commissions, and no closing costs. Most
+          importantly, our process is easy and we will treat you with honesty,
+          respect, and kindness
+        </p>
+      </header>
+      <div class="input-group">
+        <input class="input" type="text" placeholder="Enter Location" />
+        <button class="btn btn--search">
+          <svg class="icon icon--secondary">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
+      </div>
+      <ul class="list search--locations">
+        <li><a href="#">Maharashtra</a></li>
+        <li><a href="#">Delhi</a></li>
+        <li><a href="#">Tamil Nadu</a></li>
+        <li><a href="#">Uttar Pradesh</a></li>
+        <li><a href="#">Goa</a></li>
+        <li><a href="#">Madhya Pradesh</a></li>
+      </ul>
+    </section>
+    <!--Service-->
     <section class="block container block-service">
       <div class="grid grid--1x3">
         <div class="service">
@@ -141,7 +176,7 @@
       </div>
     </section>
     <!-- advertise-->
-    <section class="block container block-advertise">
+    <section class="block container block-advertise" >
       <header class="block__header">
         <h2 class="block__heading">We Care About Our Clients</h2>
         <p>
@@ -150,7 +185,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 advertise-feature">
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <div class="media__image">
             <span class="icon icon-container">
               <svg class="icon icon--secondary">
@@ -168,7 +203,7 @@
             <a href="#" class="link-arrow">Discover</a>
           </div>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/advertise1.webp 1x, images/advertise1@2x.webp 2x" />
@@ -180,7 +215,7 @@
         /></picture>
       </article>
       <article class="grid grid--1x2 advertise-feature">
-        <div class="media">
+        <div class="media" data-aos="fade-left">
           <div class="media__image">
             <span class="icon icon-container">
               <svg class="icon icon--secondary">
@@ -198,7 +233,7 @@
             <a href="#" class="link-arrow">Discover</a>
           </div>
         </div>
-        <picture>
+        <picture  data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/advertise3.webp 1x, images/advertise3@2x.webp 2x" />
@@ -210,7 +245,7 @@
         /></picture>
       </article>
       <article class="grid grid--1x2 advertise-feature">
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <div class="media__image">
             <span class="icon icon-container">
               <svg class="icon icon--secondary">
@@ -228,7 +263,7 @@
             <a href="#" class="link-arrow">Discover</a>
           </div>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/advertise1.webp 1x, images/advertise1@2x.webp 2x" />
@@ -240,7 +275,7 @@
         /></picture>
       </article>
       <article class="grid grid--1x2 advertise-feature">
-        <div class="media">
+        <div class="media" data-aos="fade-left">
           <div class="media__image">
             <span class="icon icon-container">
               <svg class="icon icon--secondary">
@@ -258,7 +293,7 @@
             <a href="#" class="link-arrow">Discover</a>
           </div>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/advertise2.webp 1x, images/advertise2@2x.webp 2x" />
@@ -272,11 +307,11 @@
     </section>
     <!--case-------------------------->
     <section class="block block--dark block--skewed--right block-case">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-down">
         <h2>Here’s What We Can Do For You.</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-case__image">
+        <picture class="block-case__image" data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/advertise3.webp 1x, images/advertise3@2x.webp 2x" />
@@ -290,7 +325,7 @@
           <li>
             <div class="media">
               <p>
-                <i class="fas fa-chevron-circle-right"></i>
+                <i class="fas fa-chevron-circle-right"data-aos="fade-right"></i>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores natus cupiditate distinctio voluptatibus! Reiciendis
                 quo soluta consequuntur provident officia cum.
@@ -300,7 +335,7 @@
           <li>
             <div class="media">
               <p>
-                <i class="fas fa-chevron-circle-right"></i>
+                <i class="fas fa-chevron-circle-right "data-aos="fade-right"></i>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores natus cupiditate distinctio voluptatibus! Reiciendis
                 quo soluta consequuntur provident officia cum.
@@ -310,7 +345,7 @@
           <li>
             <div class="media">
               <p>
-                <i class="fas fa-chevron-circle-right"></i>
+                <i class="fas fa-chevron-circle-right" data-aos="fade-right"></i>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores natus cupiditate distinctio voluptatibus! Reiciendis
                 quo soluta consequuntur provident officia cum.
@@ -320,7 +355,7 @@
           <li>
             <div class="media">
               <p>
-                <i class="fas fa-chevron-circle-right"></i>
+                <i class="fas fa-chevron-circle-right" data-aos="fade-right"></i>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores natus cupiditate distinctio voluptatibus! Reiciendis
                 quo soluta consequuntur provident officia cum.
@@ -332,7 +367,7 @@
     </section>
     <!--testimonial-->
     <section class="block container">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up" >
         <h2>What our Customers are Saying</h2>
         <p>
           Highest Offer has mastered the art and science of home selling to
@@ -372,11 +407,11 @@
                   </svg>
                 </div>
                 <div class="media__body">
-                  <h3 class="media__title quote__author">Sahil Lende</h3>
-                  <p class="author--desig">SDE,Amazon</p>
+                  <h3 class="media__title quote__author" data-aos="fade-up">Sahil Lende</h3>
+                  <p class="author--desig" data-aos="fade-up">SDE,Amazon</p>
                 </div>
               </div>
-              <a href="#" class="link-arrow">More Testimonials</a>
+              <a href="/Testimonial.html" class="link-arrow">More Testimonials</a>
             </footer>
           </blockquote>
         </div>
@@ -466,5 +501,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

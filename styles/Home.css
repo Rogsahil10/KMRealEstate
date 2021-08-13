@@ -3,15 +3,16 @@
   background: var(--color-secondary);
 }
 :root {
-  --color-primary: #6899d1;
+  --color-primary: #a2d2ff;
   --color-secondary: #4d5557;
-  --color-accent: #e92113;
-  --color-heading: #1b0760;
+  --color-accent: #d00000;
+  --color-heading: #023047;
   --color-body: #767186;
   --color-body-dark: #41385e;
-  --color-border: #588b8f;
+  --color-border: #85bcc0;
   --border-radius: 50px;
   --color-banner: #2979ff;
+  --color-background: #f1faee;
 }
 *,
 *::after,
@@ -30,6 +31,7 @@ html {
 }
 
 body {
+  background: var(--color-background);
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.5rem;
@@ -97,6 +99,13 @@ p {
   .link-arrow {
     font-size: 1.5rem;
   }
+}
+.search--locations a {
+  color: var(--color-heading);
+  transition: color 0.3s;
+}
+.search--locations a:hover {
+  color: var(--color-body);
 }
 
 .footer-fropdown-body--links a {
@@ -513,6 +522,8 @@ a:focus {
 }
 /*----callout---*/
 .callout {
+  margin: 0 auto;
+  max-width: 1000px;
   padding: 3rem;
   border-radius: 5px;
 }
@@ -657,6 +668,7 @@ a:focus {
   max-width: 1140px;
 }
 /*--hero--*/
+
 .hero .block__header {
   margin-bottom: 0rem;
 }
@@ -738,6 +750,9 @@ a:focus {
 }
 
 /*-----case---*/
+.case {
+  background: var(--color-primary);
+}
 .block-case__image > img {
   width: 100%;
   box-shadow: 0 0 30px 8px var(--color-body-dark);
