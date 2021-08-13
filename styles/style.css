@@ -1,3 +1,7 @@
+::selection {
+  color: white;
+  background: var(--color-secondary);
+}
 :root {
   --color-primary: #6899d1;
   --color-secondary: #4d5557;
@@ -29,6 +33,7 @@ body {
 
   margin-bottom: 0.5rem;
 }
+
 h1,
 h2,
 h3 {
@@ -122,7 +127,6 @@ p {
   text-decoration: none;
   list-style: none;
   padding-left: 0;
-  color: var(--color-heading);
 }
 
 .list--inline .list__item {
@@ -132,6 +136,7 @@ p {
 .list--tick {
   list-style-image: url(/images/tick.svg);
   padding-left: 4rem;
+  color: var(--color-heading);
 }
 .list--tick .list__item {
   padding-left: 1.2rem;
@@ -395,6 +400,7 @@ p {
 /*----media------*/
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 .media__title {
   margin-top: 0;
@@ -615,7 +621,9 @@ p {
 .block--dark {
   background: var(--color-banner);
 }
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: white;
 }
 .block__header {
@@ -624,7 +632,7 @@ p {
 }
 .block--skewed--right {
   padding: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 .block--skewed--left {
   padding: calc(var(--padding-vertical) + 4rem);
@@ -636,9 +644,7 @@ p {
   max-width: 1140px;
 }
 /*--hero--*/
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
+
 .hero__tagline {
   color: white;
   font-size: 2rem;
@@ -713,5 +719,40 @@ p {
 @media screen and (min-width: 769px) {
   .advertise-feature:nth-of-type(even) .media {
     order: 2;
+  }
+}
+
+/*-----case---*/
+.block-case__image > img {
+  width: 100%;
+  box-shadow: 0 0 30px 8px var(--color-body-dark);
+}
+.block-case .grid {
+  gap: 4rem;
+}
+.block-case .list {
+  margin-top: 0;
+}
+.block-case .media {
+  line-height: normal;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px 2px black;
+}
+
+@media screen and (min-width: 768px) {
+  .block-case .media {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .block-case .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-case__image {
+    justify-self: end;
+  }
+  .block-case__image > image {
+    width: auto;
+    max-width: 700px;
   }
 }
