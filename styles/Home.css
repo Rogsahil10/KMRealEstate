@@ -440,7 +440,7 @@ a:focus {
 }
 /*--quotes---*/
 .quote {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: var(--color-body-dark);
 }
@@ -455,6 +455,7 @@ a:focus {
   bottom: 20px;
 }
 .quote__author {
+  font-size: 1.5rem;
   font-family: "Righteous", cursive;
   font-style: normal;
   margin-bottom: 0;
