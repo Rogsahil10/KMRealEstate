@@ -1,0 +1,38 @@
+:root {
+  --color-primary: #a2d2ff;
+  --color-secondary: #4d5557;
+  --color-accent: #d00000;
+  --color-heading: #023047;
+  --color-body: #767186;
+  --color-body-dark: #41385e;
+  --color-border: #85bcc0;
+  --border-radius: 50px;
+  --color-banner: #2979ff;
+  --color-background: #f1faee;
+}
+
+/*---testimonial-two---*/
+
+.card-testimonial .quote {
+  line-height: normal;
+  font-style: normal;
+}
+
+.card-testimonial--primary {
+  background: var(--color-banner);
+}
+.card-testimonial--primary * {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.card-testimonial--primary .author--desig {
+  opacity: 0.8;
+}
+
+/*--block-testimonial two*/
+.block-testimonial--two .grid {
+  gap: 4rem;
+}
