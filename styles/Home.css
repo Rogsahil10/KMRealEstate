@@ -39,6 +39,11 @@ body {
 
   margin-bottom: 0.5rem;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 h1,
 h2,
